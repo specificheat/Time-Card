@@ -7,47 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Added link to to Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Cardo:wght@700&display=swap" rel="stylesheet">
+    <!--Added link to awesome icon -->
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Added link to CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     
   </head>
   <body>
-
+    <div class="container">
     <div class="jumbotron jumbotron-fluid">
-            <div class="container">
+          
                 <h1 class="display-3">Employee Data Management</h1>
                 <p class="lead">A Comprehensive Database of Employee Billable Hours</p>
         </div>
-    </div>
-    <div class="container">
-        
+    
+  
+
+        <div class = "wrapper">
         <div class="row">
-        <form class="col-md-12" id="form">
-            <label><h2>Add Employee</h2></label>
-                <div class="form-group">
-                    <label for="employeeName">Employee Name:</label>
-                    <input type="text" class="form-control" id="employeeName" placeholder="John Smith">
-                </div>
-                <div class="form-group">
-                    <label for="role">Role:</label>
-                    <input type="text" class="form-control" id="role" placeholder="Junior Web Developer">
-                </div>
-                <div class="form-group">
-                    <label for="date">Start Date (MM/DD/YYYY)</label>
-                    <input type="text" class="form-control" id="date" placeholder="07/12/2018">
-                </div>
-                <div class="form-group">
-                    <label for="rate">Monthly Rate::</label>
-                    <input type="text" class="form-control" id="rate" placeholder="35000">
-                </div>
-                <button class="btn btn-primary" id='submit-employee'>Submit</button>                
-        </form>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-                <label><h2>Current Employees</h2></label>
+            <div class="col-md-12" >
+                <div id = "empDiv">
+                <label><h2><strong>Current Employees</strong></h2></label>
+            </div>
                     <table class="table table-hover">
                     <thead>
                         <tr>
@@ -71,8 +55,41 @@
                     </tbody>
                     </table>
             </div>
-        </div>                                                            
+        </div>    
+
     </div>
+    <br><br>
+        
+    <div class = "wrapper">
+        <div class="row">
+        <form class="col-md-12" id="form">
+            <div id = "empDiv">
+            <label><h2><strong>Add Employee</strong></h2></label>
+        </div>
+                <div class="form-group">
+                    <label for="employeeName">Employee Name:</label>
+                    <input type="text" class="form-control" id="employeeName" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <input type="text" class="form-control" id="role" placeholder="Junior Web Developer">
+                </div>
+                <div class="form-group">
+                    <label for="date">Start Date (MM/DD/YYYY)</label>
+                    <input type="text" class="form-control" id="date" placeholder="07/12/2018">
+                </div>
+                <div class="form-group">
+                    <label for="rate">Monthly Rate::</label>
+                    <input type="text" class="form-control" id="rate" placeholder="35000">
+                </div>
+                <button class="btn btn-primary ml-3" id='submit-employee'>Submit</button>                
+        </form>
+        </div>
+        
+                                                                
+    </div>
+
+</div>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

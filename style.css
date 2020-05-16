@@ -1,0 +1,23 @@
+.jumbotron{
+    text-align: center;
+    background-color: rgb(13, 124, 189);
+}
+
+.wrapper{
+    border:2px solid;
+
+}
+
+#empDiv{
+    border:1px solid;
+    background-color: rgb(147, 209, 238);
+
+}
+
+h2{
+    padding:15px;
+}
+
+.form-group{
+    padding: 15px;
+}
